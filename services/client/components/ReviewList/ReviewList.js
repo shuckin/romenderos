@@ -44,7 +44,10 @@ export const ReviewList = ({ data }) => {
                       <div className="">
                         <div className="w-18 h-18 rounded-full overflow-hidden mr-5 bg-purple-light">
                           <img
-                            src={`http://localhost:1337${imgAvatar.url}`}
+                            src={`${
+                              process.env.NEXTJS_PUBLIC_URL ||
+                              "http://localhost:1337"
+                            }${imgAvatar.url}`}
                             alt={fullname}
                           />
                         </div>
