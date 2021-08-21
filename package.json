@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "npm run develop --prefix backend",
-    "client": "npm run dev --prefix client",
+    "server": "npm run develop --prefix services/backend",
+    "client": "npm run dev --prefix services/client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "git": "git add . && git commit -m \"minor update\" && git push"
   },
