@@ -1,124 +1,123 @@
-.about {
-    &__section {
+
+    .about__section {
         @apply  mx-auto container w-full  px-4 mt-20;
     }
 
-    &__inner {
+    .about__inner {
         @apply bg-gray rounded-xl min-h-full px-7 py-7 ;
     }
     
-    &__title {
+    .about__title {
         @apply text-purple-light text-3xl font-bold max-w-xl mb-3;
     }
 
-    &__subtitle {
+    .about__subtitle {
         @apply text-primary text-xl font-semibold mb-5 block;
     }
 
-    &__form_inner {
+    .about__form_inner {
         @apply max-w-sm;
     }
 
-    &__form {
+    .about__form {
         @apply grid grid-rows-3 gap-3;
     }
     
-    &__input {
+    .about__input {
         @apply px-5 py-3 rounded-md outline-none;
     }
 
-    &__btn {
+    .about__btn {
         @apply  text-2xl text-white font-semibold px-10 py-3 outline-none bg-purple-light hover:bg-purple-dark rounded-md shadow-xl transition-all mb-10;
     }
     
-    &__background_inner {
+    .about__background_inner {
         @apply mb-5;
     }
     
-    &__background {
+    .about__background {
         background-image: url("../../assets/img/science.svg");
         @apply w-[300px] h-[280px];
     }
-}
 
-.modalDialog {
-    @apply fixed top-10 left-0 right-0 bottom-0 text-primary bg-white z-40 rounded-xl w-4/5; 
-}
 
-.hero {
-    @apply  hidden;
-    &__inner {
+    .modalDialog {
+        @apply fixed top-10 left-0 right-0 bottom-0 text-primary bg-white z-40 rounded-xl w-4/5; 
+    }
+
+    .hero {
+        @apply  hidden;
+    }
+        .hero__inner {
         @apply bg-purple-light rounded-xl px-3 py-4;
     }
 
-    &__heading {
+    .hero__heading {
 
     }
 
-    &__title {
+    .hero__title {
         @apply text-white font-bold text-xl;
     }
 
-    &__subtitle {
+    .hero__subtitle {
         @apply text-white text-xl;
     }
 
-}
+
 
 
 /* Large Screen */
 @screen lg {
-    .about {
-
-        &__section  {
+    
+        .about__section  {
             @apply mt-32 ;
         }
 
-        &__inner {
+        .about__inner {
             @apply rounded-3xl min-h-full px-36 py-20 grid grid-cols-2 items-center;
         }
 
-        &__title {
+        .about__title {
             @apply text-5xl font-bold max-w-xl mb-5;
         }
 
-        &__subtitle  {
+        .about__subtitle  {
             @apply text-2xl mb-10;
         }
 
-        &__background_inner {
+        .about__background_inner {
             @apply grid justify-center;
         }
 
-        &__background {
+        .about__background {
             @apply w-[345px] h-[320px];
         }
     
-    }
+    
 
-    .hero {
-        @apply  flex justify-center relative -top-14;
-        &__inner {
+        .hero {
+            @apply  flex justify-center relative -top-14;
+        }
+        .hero__inner {
             @apply bg-purple-light rounded-xl px-10 py-8 w-4/5;
         }
     
-        &__heading {
+        .hero__heading {
     
         }
     
-        &__title {
+        .hero__title {
             @apply text-white font-bold text-2xl;
         }
     
-        &__subtitle {
+        .hero__subtitle {
             @apply text-white text-xl;
         }
     
-    }
 
     .modalDialog {
         @apply fixed top-10 left-0 right-0 bottom-0 text-primary bg-white z-10 rounded-xl; 
     }
-    
     
 }

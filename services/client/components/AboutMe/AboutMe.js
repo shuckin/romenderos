@@ -1,6 +1,6 @@
 import React from "react";
 import { Dialog } from "@reach/dialog";
-import style from "./style.module.scss";
+import style from "./style.module.css";
 import "@reach/dialog/styles.css";
 
 export const AboutMe = () => {
