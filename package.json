@@ -21,6 +21,7 @@
   "license": "ISC",
   "dependencies": {
     "concurrently": "^6.2.1",
+    "nodemon": "^2.0.12",
     "sass": "^1.38.0"
   }
 }
