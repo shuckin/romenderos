@@ -8,6 +8,8 @@
 # testing
 /coverage
 
+_static
+
 # next.js
 /.next/
 /out/
