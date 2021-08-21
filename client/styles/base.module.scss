@@ -1,0 +1,28 @@
+.section {
+    @apply container mx-auto py-32 px-5;
+}
+.section__title {
+    @apply text-3xl font-semibold uppercase;
+}
+
+.section__subtitle {
+    @apply text-primary text-base font-light;
+}
+
+
+@screen md {
+    
+    .section__title {
+        @apply text-2xl;
+    }
+    
+}
+
+
+@screen lg {
+
+    .section__title {
+        @apply text-4xl;
+    }
+    
+}

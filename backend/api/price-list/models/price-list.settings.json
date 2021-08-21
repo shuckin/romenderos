@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "price_lists",
+  "info": {
+    "name": "PricesList",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": false
+    },
+    "fearute": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.feature"
+    },
+    "price": {
+      "type": "integer",
+      "required": false
+    },
+    "pricePeriod": {
+      "type": "string"
+    },
+    "isRecommended": {
+      "type": "boolean"
+    },
+    "priceOne": {
+      "type": "integer"
+    },
+    "priceAll": {
+      "type": "integer"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "draft",
+        "publisher"
+      ]
+    },
+    "slag": {
+      "type": "uid",
+      "targetField": "title"
+    }
+  }
+}

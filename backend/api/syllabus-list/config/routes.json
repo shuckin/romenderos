@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/syllabus-lists",
+      "handler": "syllabus-list.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/syllabus-lists/count",
+      "handler": "syllabus-list.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/syllabus-lists/:id",
+      "handler": "syllabus-list.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/syllabus-lists",
+      "handler": "syllabus-list.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/syllabus-lists/:id",
+      "handler": "syllabus-list.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/syllabus-lists/:id",
+      "handler": "syllabus-list.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

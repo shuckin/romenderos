@@ -1,0 +1,86 @@
+.header__section {
+    @apply fixed top-0 left-0 w-full bg-white shadow-xl z-50;
+}
+
+.header__inner {
+    @apply h-16 mx-auto px-3;
+}
+
+.header__body {
+    @apply h-full w-full  flex items-center justify-between;
+}
+
+
+.header__title {
+    @apply text-primary font-semibold text-xl;
+}
+
+.header__subtitle {
+    @apply text-primary font-normal -mt-2;
+}
+
+.header__menu {
+    @apply hidden text-xl font-normal text-primary;
+}
+
+.header__phone {
+    @apply  text-primary text-xl font-semibold hover:underline ;
+}
+
+
+.header__btn__primary {
+    @apply bg-gradient-to-r from-red-light to-red-dark px-7 py-3 text-white uppercase font-semibold outline-none shadow-md hover:shadow-xl rounded-md transition-all;
+}
+
+.header__btn__secondary {
+    @apply bg-gradient-to-r from-purple-light to-purple-dark px-7 py-3 text-white uppercase font-semibold outline-none shadow-md hover:shadow-xl rounded-md transition-all;
+}
+
+
+.header__nav_icon{
+    @apply w-8 h-8 absolute top-3.5 right-3 text-primary;
+}
+
+.nav__overlay {
+    @apply fixed top-0 left-0 w-4/5 h-full bg-white p-4 transition-all lg:w-auto lg:gap-x-1 lg:h-auto lg:bg-none z-50;
+}
+
+.nav__overlay_inner {
+    @apply mt-3 px-2.5 lg:hidden;
+}
+
+.nav__overlay_hidden {
+    @apply fixed top-0 -left-full w-full h-full bg-white p-4 transition-all lg:w-auto lg:gap-x-1 lg:h-auto lg:bg-none z-50;
+}
+
+.nav__overlay_menu {
+    @apply grid gap-5; 
+}
+.nav__overlay_title {
+    @apply text-2xl text-primary font-semibold;
+}
+
+.nav__overlay_phone {
+    @apply text-2xl text-primary font-semibold mt-10;
+}
+
+
+/* Large Screen */
+@screen lg {
+    .header__inner {
+        @apply h-18 container;
+    }
+    
+    .header__title {
+        @apply  text-2xl;
+    }
+    .header__menu {
+        @apply grid grid-cols-5 gap-5;
+    }
+    .header__subtitle {
+        @apply text-xl;
+    }
+    .header__phone {
+       @apply text-xl;
+    }
+  }

@@ -1,0 +1,22 @@
+{
+  "kind": "singleType",
+  "collectionName": "news_pages",
+  "info": {
+    "name": "NewsPage",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "news_lists": {
+      "collection": "news-list"
+    }
+  }
+}

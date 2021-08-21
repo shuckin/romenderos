@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "feedback_forms",
+  "info": {
+    "name": "FeedbackForms"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "messages": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/faqs-lists",
+      "handler": "faqs-list.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/faqs-lists/count",
+      "handler": "faqs-list.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/faqs-lists/:id",
+      "handler": "faqs-list.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/faqs-lists",
+      "handler": "faqs-list.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/faqs-lists/:id",
+      "handler": "faqs-list.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/faqs-lists/:id",
+      "handler": "faqs-list.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

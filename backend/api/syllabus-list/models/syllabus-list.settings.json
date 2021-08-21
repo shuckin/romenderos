@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "Syllabus",
+  "info": {
+    "name": "SyllabusList",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "numbering": {
+      "type": "string",
+      "required": true,
+      "default": "#1"
+    },
+    "isCols": {
+      "type": "boolean"
+    },
+    "slag": {
+      "type": "uid",
+      "targetField": "heading"
+    },
+    "category": {
+      "model": "category"
+    }
+  }
+}

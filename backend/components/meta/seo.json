@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_meta_seos",
+  "info": {
+    "name": "SEO",
+    "icon": "audio-description",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "metaTitle": {
+      "type": "string"
+    },
+    "metaKeywords": {
+      "type": "string"
+    },
+    "metaDescription": {
+      "type": "text"
+    }
+  }
+}

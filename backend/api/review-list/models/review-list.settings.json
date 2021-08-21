@@ -1,0 +1,67 @@
+{
+  "kind": "collectionType",
+  "collectionName": "review_lists",
+  "info": {
+    "name": "ReviewList",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fullname": {
+      "type": "string",
+      "required": true,
+      "default": "Иванова Мария"
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "dataUse": {
+      "type": "string",
+      "required": true,
+      "default": "Училась в 2020 году"
+    },
+    "slag": {
+      "type": "uid",
+      "targetField": "fullname"
+    },
+    "urlReview": {
+      "type": "string"
+    },
+    "imgAvatar": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "rating": {
+      "type": "integer",
+      "max": 5,
+      "min": 1,
+      "required": true,
+      "default": 5
+    },
+    "imgSource": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "urlSource": {
+      "type": "string"
+    }
+  }
+}

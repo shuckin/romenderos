@@ -1,0 +1,24 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@iconscout/react-unicons": "^1.1.6",
+    "@iconscout/react-unicons-solid": "^0.0.3",
+    "@reach/dialog": "^0.16.0",
+    "next": "latest",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-tabs": "^3.2.2",
+    "sass": "^1.38.0",
+    "swiper": "^6.8.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "postcss": "^8.3.5",
+    "tailwindcss": "^2.2.4"
+  }
+}
