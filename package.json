@@ -6,8 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "npm run develop --prefix services/backend",
+    "serverBackend": "npm run build --prefix services/backend",
     "client": "npm run dev --prefix services/client",
+    "clientBuild": "npm run build --prefix services/client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "concurrently \"npm run serverBackend\" \"npm run clientBuild\"",
     "git": "git add . && git commit -m \"minor update\" && git push"
   },
   "keywords": [],
