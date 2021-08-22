@@ -74,7 +74,13 @@ export const Header = ({ global }) => {
                   return (
                     <div key={menu.id} className={style.nav__overlay_title}>
                       <Link as={menu.url} href={menu.url}>
-                        <a>{menu.text}</a>
+                        <a
+                          onClick={() => {
+                            setHidden(!hidden);
+                          }}
+                        >
+                          {menu.text}
+                        </a>
                       </Link>
                     </div>
                   );

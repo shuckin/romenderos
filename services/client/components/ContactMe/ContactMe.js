@@ -43,6 +43,9 @@ export const ContactMe = ({ data }) => {
           <h1 className={base.section__title}>
             Контакты
           </h1>
+          <span>
+            Заполните форму. Мы свяжемся с вами в ближайщее время.
+          </span>
         </div>
 
         <div className="grid lg:grid-cols-2 lg:gap-5 grid-rows-2 lg:grid-rows-1 gap-5 items-start">
@@ -74,7 +77,7 @@ export const ContactMe = ({ data }) => {
 
           <form>
             <div className="grid grif-rows-4 gap-4">
-              <div className="grid grid-rows-2 bg-blue-100 px-6 py-4 rounded-xl">
+              <div className="grid grid-rows-2 bg-sky-light px-6 py-4 rounded-xl">
                 <label htmlFor="#" className="text-primary-light">
                   Имя
                 </label>
@@ -84,7 +87,7 @@ export const ContactMe = ({ data }) => {
                   className="bg-transparent outline-none"
                 />
               </div>
-              <div className="grid grid-rows-2 bg-blue-100 px-6 py-4 rounded-xl">
+              <div className="grid grid-rows-2 bg-sky-light px-6 py-4 rounded-xl">
                 <label htmlFor="#" className="text-primary-light">
                   Email
                 </label>
@@ -94,7 +97,7 @@ export const ContactMe = ({ data }) => {
                   className="bg-transparent outline-none"
                 />
               </div>
-              <div className="grid grid-rows-2 bg-blue-100 px-6 py-4 rounded-xl">
+              <div className="grid grid-rows-2 bg-sky-light px-6 py-4 rounded-xl">
                 <label htmlFor="#" className="text-primary-light">
                   Телефон
                 </label>
@@ -104,7 +107,7 @@ export const ContactMe = ({ data }) => {
                   name="phone"
                 />
               </div>
-              <div className="grid bg-blue-100 px-6 py-4 rounded-xl">
+              <div className="grid bg-sky-light px-6 py-4 rounded-xl">
                 <label htmlFor="#" className=" text-primary-light">
                   Сообщение
                 </label>

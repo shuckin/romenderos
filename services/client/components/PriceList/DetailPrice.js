@@ -4,7 +4,7 @@ import base from "../../styles/base.module.scss";
 
 export const DetailPrice = ({ data }) => {
   return (
-    <section>
+    <section id="price">
       <div className={base.section}>
         <div>
           <h1 className={base.section__title}>

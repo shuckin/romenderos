@@ -1,0 +1,85 @@
+.footer {
+    @apply bg-gray-500 lg:pt-10 lg:pb-4 md:py-8 pt-16 pb-8 px-5;
+}
+
+.footer__inner {
+    @apply max-w-screen-xl mx-auto overflow-hidden lg:grid  lg:grid-cols-17 mb-10;
+}
+
+.footer__left {
+    @apply grid grid-rows-2 gap-2
+}
+
+.footer__name {
+    
+}
+
+.footer__title {
+    @apply text-white font-semibold text-xl;
+}
+
+.footer__subtitle {
+    @apply text-white font-normal -mt-2;
+}
+
+.footer__icons {
+    @apply flex space-x-4;
+}
+
+.social__link {
+    @apply text-gray-400 hover:text-gray-500 hover:opacity-70 transition-all;
+}
+
+.footer__nav {
+    @apply flex lg:space-x-7 flex-col lg:flex-row lg:items-start lg:justify-center;
+}
+
+.navbar__link {
+    @apply text-gray-400 hover:text-gray-600 text-base font-normal transition-all;
+}
+
+.footer__menu {
+    @apply flex items-start;
+}
+
+
+.footer__right {
+    @apply justify-start;
+}
+
+.footer__title {
+    @apply text-xl text-white mb-3
+}
+
+.footer__contact {
+    @apply mt-2 mb-5;
+}
+
+.footer__phone {
+    @apply text-2xl text-white font-semibold;
+}
+.footer__email {
+    @apply text-base text-gray-400;
+}
+
+
+.footer__btn {
+    @apply  text-xl text-white font-semibold px-6 py-3 outline-none bg-chateaugreen-500 hover:bg-chateaugreen-700 rounded-md shadow-xl transition-all;
+}
+
+.footer__info {
+    @apply lg:grid lg:grid-cols-2 border-t border-gray-600 pt-5 lg:justify-between max-w-screen-xl mx-auto; 
+}
+
+.footer__copy {
+    @apply text-base text-gray-400;
+}
+
+.footer__development {
+    @apply text-base text-gray-400 uppercase lg:text-right;
+}
+
+.footer__development_link {
+    @apply hover:underline text-chateaugreen-500;
+}
+

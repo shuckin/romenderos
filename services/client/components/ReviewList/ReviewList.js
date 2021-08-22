@@ -43,17 +43,17 @@ export const ReviewList = ({ data }) => {
                     <div className="flex items-start">
                       <div className="">
                         <div className="w-18 h-18 rounded-full overflow-hidden mr-5 bg-purple-light">
-                          <img
+                          {/* <img
                             src={`http://localhost:1337${imgAvatar.url}`}
                             alt={fullname}
-                          />
+                          /> */}
                         </div>
                         <div className="bg-white rounded-full w-7 h-7 relative bottom-8 left-14 overflow-hidden hover:shadow">
                           <a href={urlSource} target="_blank">
-                            <img
+                            {/* <img
                               src={`http://localhost:1337${imgSource.url}`}
                               alt=""
-                            />
+                            /> */}
                           </a>
                         </div>
                       </div>

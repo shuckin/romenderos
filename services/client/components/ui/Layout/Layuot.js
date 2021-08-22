@@ -6,7 +6,7 @@ export const Layuot = ({ children, headerMenu, footerMenu, globalInfo }) => {
     <>
       <Header menu={headerMenu} global={globalInfo} />
       <div className="flex flex-col w-full flex-1">{children}</div>
-      <Footer menu={footerMenu} />
+      <Footer menu={footerMenu} global={globalInfo}/>
     </>
   );
 };
