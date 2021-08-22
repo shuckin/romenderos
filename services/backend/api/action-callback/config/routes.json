@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/action-callback",
+      "handler": "action-callback.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/action-callback",
+      "handler": "action-callback.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/action-callback",
+      "handler": "action-callback.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

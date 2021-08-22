@@ -1,5 +1,5 @@
 .footer {
-    @apply bg-gray-500 lg:pt-10 lg:pb-4 md:py-8 pt-16 pb-8 px-5;
+    @apply bg-gray-500 lg:pt-16 lg:pb-4 md:py-8 pt-16 pb-8 px-5;
 }
 
 .footer__inner {
@@ -18,7 +18,7 @@
 }
 
 .footer__title {
-    @apply text-white font-semibold text-xl;
+    @apply text-white font-semibold text-2xl;
 }
 
 .footer__subtitle {
@@ -34,9 +34,12 @@
 }
 
 .footer__nav {
-    @apply flex lg:space-x-7 flex-col lg:flex-row lg:items-start lg:justify-center;
+    @apply flex lg:space-x-5 flex-col lg:flex-row lg:items-start lg:justify-center;
 }
 
+.footer__items {
+    @apply mb-5 lg:mb-0 space-y-3;
+}
 .navbar__link {
     @apply text-gray-400 hover:text-gray-600 text-base font-normal transition-all;
 }
@@ -50,19 +53,39 @@
     @apply justify-start;
 }
 
-.footer__title {
-    @apply text-xl text-white mb-3
+.footer__heading {
+    @apply text-xl text-white mb-3 font-semibold;
 }
 
-.footer__contact {
+.footer__contacts {
     @apply mt-2 mb-5;
 }
 
-.footer__phone {
-    @apply text-2xl text-white font-semibold;
+.footer__contact {
+    @apply text-white  flex items-center mb-5;
 }
+
+.footer__phone {
+    @apply text-white  hover:underline;
+}
+
+.phone__info {
+    @apply flex flex-col;
+}
+.phone, .email{
+    @apply text-xl font-semibold hover:underline transition-all;
+}
+
+.callback {
+    @apply text-sm text-gray-400;
+}
+
+.icon {
+    @apply text-gray-400 h-7 w-7 mr-5;
+}
+
 .footer__email {
-    @apply text-base text-gray-400;
+    @apply text-base text-gray-400 hover:underline;
 }
 
 

@@ -1,0 +1,18 @@
+.action {
+    @apply bg-electricviolet-500;
+}
+
+.action__inner {
+    @apply container mx-auto py-6 px-5 flex lg:items-center lg:justify-between flex-col items-center lg:flex-row md:items-start;
+}
+.action__title {
+    @apply text-2xl text-white font-semibold
+}
+
+.action__subtitle {
+    @apply text-base text-white
+}
+
+.action__btn {
+    @apply  text-xl text-white font-semibold px-6 py-3 outline-none bg-chateaugreen-500 hover:bg-chateaugreen-700 rounded-md shadow-xl transition-all mt-5 lg:mt-0;
+}

@@ -1,7 +1,8 @@
 import style from "./style.module.css";
 import Link from "next/link";
+import { UilMobileAndroid, UilEnvelope } from "@iconscout/react-unicons";
 
-export const Footer = ({ menu, global }) => {
+export const Footer = ({ menu, global, privacy }) => {
   const {
     navbar: {
       logoTitle: { title, subtitle },
@@ -28,7 +29,6 @@ export const Footer = ({ menu, global }) => {
           <div className={style.footer__icons}>
             {SocialMedia.map((social) => {
               const { id, link, img, title } = social;
-              console.log(img.url);
               return (
                 <a
                   target={link.newTab ? "_blank" : ""}
@@ -47,7 +47,7 @@ export const Footer = ({ menu, global }) => {
             })}
           </div>
           <div className={style.footer__privacy}>
-            <Link as="/privacy" href="/privacy" >Пользовательское соглашение</Link>
+            <Link href="/privacy ">Пользовательское соглашение</Link>
           </div>
         </div>
 
@@ -58,7 +58,7 @@ export const Footer = ({ menu, global }) => {
               const { links, title, id } = menu;
               return (
                 <div key={id} className={style.footer__items}>
-                  <div className={style.footer__title}>{title}</div>
+                  <div className={style.footer__heading}>{title}</div>
                   {links.map((link) => {
                     const { url, text } = link;
                     return (
@@ -76,14 +76,28 @@ export const Footer = ({ menu, global }) => {
         </div>
         {/* light */}
         <div className={style.footer__right}>
-          <div className={style.footer__title}>Контакты</div>
-          <div className={style.footer__contact}>
-            <div className={style.footer__phone}>{phone}</div>
-            <div className={style.footer__email}>{email}</div>
+          <div className={style.footer__heading}>Контакты</div>
+          <div className={style.footer__contacts}>
+            <div>
+              <a href={`tel:${phone}`}>
+                <div className={style.footer__contact}>
+                  <UilMobileAndroid className={style.icon} />
+                  <div className={style.phone__info}>
+                    <span className={style.phone}>{phone}</span>
+                    <span className={style.callback}>Заказать звонок</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div>
+              <a href={`mailto:${email}`}>
+                <div className={style.footer__contact}>
+                  <UilEnvelope className={style.icon} />{" "}
+                  <span className={style.email}>{email}</span>
+                </div>
+              </a>
+            </div>
           </div>
-          <button type="submit" className={style.footer__btn}>
-            Записаться на занятие
-          </button>
         </div>
       </div>
       <div className={style.footer__info}>

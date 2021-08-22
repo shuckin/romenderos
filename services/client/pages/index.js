@@ -8,6 +8,7 @@ import ReviewList from "@/components/ReviewList";
 import Faqs from "@/components/Faqs";
 import SyllabusList from "@/components/SyllabusList";
 import ContactMe from "@/components/ContactMe";
+import ActionCallback from "@/components/ActionCallback";
 import { DetailPrice } from "@/components/PriceList/DetailPrice";
 
 export default function Home({
@@ -19,9 +20,11 @@ export default function Home({
   About,
   Review,
   Syllabus,
+  Privacy,
+  ActionCallback,
 }) {
   return (
-    <Layuot globalInfo={Global}>
+    <Layuot globalInfo={Global} privacyInfo={Privacy}>
       <Seo seo={Global} />
       <AboutMe data={About} />
       <NewsList data={News} />
@@ -31,22 +34,35 @@ export default function Home({
       <ReviewList data={Review} />
       <Faqs data={Faq} />
       <ContactMe data={Global} />
+      {/* <ActionCallback data={ActionCallback} /> */}
     </Layuot>
   );
 }
 
 export async function getStaticProps() {
-  const [Global, News, Price, PriceNew, Faq, About, Review, Syllabus] =
-    await Promise.all([
-      fetchAPI("/global"),
-      fetchAPI("/news-lists?status=publisher"),
-      fetchAPI("/price-lists?status=draft"),
-      fetchAPI("/price-lists?status=publisher"),
-      fetchAPI("/faqs-lists"),
-      fetchAPI("/about-me"),
-      fetchAPI("/review-lists"),
-      fetchAPI("/syllabus-lists"),
-    ]);
+  const [
+    Global,
+    News,
+    Price,
+    PriceNew,
+    Faq,
+    About,
+    Review,
+    Syllabus,
+    Privacy,
+    ActionCallback,
+  ] = await Promise.all([
+    fetchAPI("/global"),
+    fetchAPI("/news-lists?status=publisher"),
+    fetchAPI("/price-lists?status=draft"),
+    fetchAPI("/price-lists?status=publisher"),
+    fetchAPI("/faqs-lists"),
+    fetchAPI("/about-me"),
+    fetchAPI("/review-lists"),
+    fetchAPI("/syllabus-lists"),
+    fetchAPI("/privacy"),
+    fetchAPI("/action-callback"),
+  ]);
 
   return {
     props: {
@@ -58,6 +74,8 @@ export async function getStaticProps() {
       About,
       Review,
       Syllabus,
+      Privacy,
+      ActionCallback,
     },
     revalidate: 1,
   };
