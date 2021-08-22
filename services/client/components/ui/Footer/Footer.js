@@ -46,7 +46,7 @@ export const Footer = ({ menu, global }) => {
               );
             })}
           </div>
-          <div className="">
+          <div className={style.footer__privacy}>
             <Link as="/privacy" href="/privacy" >Пользовательское соглашение</Link>
           </div>
         </div>

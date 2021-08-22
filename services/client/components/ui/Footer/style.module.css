@@ -7,9 +7,12 @@
 }
 
 .footer__left {
-    @apply grid grid-rows-2 gap-2
+    @apply grid grid-rows-3 gap-2;
 }
 
+.footer__privacy {
+    @apply text-gray-400 underline hover:text-gray-600 transition-all;
+}
 .footer__name {
     
 }
