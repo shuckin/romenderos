@@ -4,11 +4,11 @@
     }
 
     .about__inner {
-        @apply bg-gray rounded-xl min-h-full px-7 py-7 ;
+        @apply bg-chateaugreen-100 rounded-xl min-h-full px-7 py-7 ;
     }
     
     .about__title {
-        @apply text-purple-light text-3xl font-bold max-w-xl mb-3;
+        @apply text-chateaugreen-500 text-3xl font-bold max-w-xl mb-3;
     }
 
     .about__subtitle {
@@ -28,7 +28,7 @@
     }
 
     .about__btn {
-        @apply  text-2xl text-white font-semibold px-10 py-3 outline-none bg-purple-light hover:bg-purple-dark rounded-md shadow-xl transition-all mb-10;
+        @apply  text-2xl text-white font-semibold px-10 py-3 outline-none bg-chateaugreen-500 hover:bg-chateaugreen-600 rounded-md shadow-xl transition-all mb-10;
     }
     
     .about__background_inner {

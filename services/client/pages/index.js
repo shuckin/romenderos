@@ -8,7 +8,7 @@ import ReviewList from "@/components/ReviewList";
 import Faqs from "@/components/Faqs";
 import SyllabusList from "@/components/SyllabusList";
 import ContactMe from "@/components/ContactMe";
-import ActionCallback from "@/components/ActionCallback";
+import ActionCallbackHero from "@/components/ActionCallbackHero";
 import { DetailPrice } from "@/components/PriceList/DetailPrice";
 
 export default function Home({
@@ -34,7 +34,7 @@ export default function Home({
       <ReviewList data={Review} />
       <Faqs data={Faq} />
       <ContactMe data={Global} />
-      {/* <ActionCallback data={ActionCallback} /> */}
+      <ActionCallbackHero data={ActionCallback} />
     </Layuot>
   );
 }

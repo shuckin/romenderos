@@ -29,11 +29,11 @@
 
 
 .header__btn__primary {
-    @apply bg-gradient-to-r from-red-light to-red-dark px-7 py-3 text-white uppercase font-semibold outline-none shadow-md hover:shadow-xl rounded-md transition-all;
+    @apply bg-chateaugreen-500 px-7 py-3 text-white uppercase font-semibold outline-none shadow-md hover:shadow-xl rounded-md transition-all;
 }
 
 .header__btn__secondary {
-    @apply bg-gradient-to-r from-purple-light to-purple-dark px-7 py-3 text-white uppercase font-semibold outline-none shadow-md hover:shadow-xl rounded-md transition-all;
+    @apply bg-chateaugreen-500 px-7 py-3 text-white uppercase font-semibold outline-none shadow-md hover:shadow-xl rounded-md transition-all;
 }
 
 

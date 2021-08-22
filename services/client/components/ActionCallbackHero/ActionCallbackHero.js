@@ -1,5 +1,5 @@
 import style from "./style.module.css";
-export const ActionCallback = ({ data }) => {
+export const ActionCallbackHero = ({ data }) => {
   const {
     heading,
     subheading,

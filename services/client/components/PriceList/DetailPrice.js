@@ -16,13 +16,13 @@ export const DetailPrice = ({ data }) => {
           <div>
             <Tabs className="">
               <TabList className="lg:flex gap-5 py-5 ">
-                <Tab className="text-xl text-purple-light font-semibold bg-gray-100 py-3 px-10 rounded hover:bg-gray-200 transition-all shadow">
+                <Tab className="text-xl text-chateaugreen-500 font-semibold bg-chateaugreen-100 py-3 px-10 rounded hover:bg-chateaugreen-200 transition-all shadow">
                   Биология ЕГЭ
                 </Tab>
-                <Tab className="text-xl text-purple-light font-semibold  bg-gray-100 py-3 px-10 rounded hover:bg-gray-200 transition-all shadow">
+                <Tab className="text-xl text-chateaugreen-500 font-semibold  bg-chateaugreen-100 py-3 px-10 rounded hover:bg-chateaugreen-200 transition-all shadow">
                   Биология ОГЭ
                 </Tab>
-                <Tab className="text-xl text-purple-light font-semibold bg-gray-100 py-3 px-10 rounded hover:bg-gray-200 transition-all shadow">
+                <Tab className="text-xl text-chateaugreen-500 font-semibold bg-chateaugreen-100 py-3 px-10 rounded hover:bg-chateaugreen-200 transition-all shadow">
                   Поступление в ВУЗ
                 </Tab>
               </TabList>
@@ -39,7 +39,7 @@ export const DetailPrice = ({ data }) => {
                   } = price;
                   return (
                     <div
-                      className="bg-blue-50 rounded-2xl px-10 py-10 grid justify-center"
+                      className="bg-chateaugreen-100 rounded-2xl px-10 py-10 grid justify-center"
                       key={id}
                     >
                       <div className="border-b-2">
@@ -51,7 +51,7 @@ export const DetailPrice = ({ data }) => {
                             {description}
                           </span>
                         </div>
-                        <button className="text-purple-light bg-white py-3 shadow rounded-xl font-semibold text-xl mt-4 w-full">
+                        <button className="text-chateaugreen-500 bg-white py-3 shadow rounded-xl font-semibold text-xl mt-4 w-full">
                           Выбрать тариф
                         </button>
                         <div className="mt-7">
