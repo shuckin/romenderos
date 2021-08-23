@@ -10,10 +10,7 @@
 4. Mongo DB
 
 ## **Screenshot**
-![](assets/img/Screenshot-4.png)
+![](screen.png)
 ---
-![](assets/img/Screenshot-2.png)
----
-![](assets/img/Screenshot-3.png)
 
 
